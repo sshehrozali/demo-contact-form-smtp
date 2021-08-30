@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <title>My Contact Form</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body class="d-flex justify-content-center align-items-center">
+    <div class="container">
+      <div class="row d-flex justify-content-center align-item-center">
+        <div
+          class="
+            col-12 col-sm-12 col-md-10 col-lg-6
+            d-flex
+            flex-column
+            justify-content-center
+            align-items-center
+          "
+        >
+          <h1 class="mb-5 display-1 text-dark text-center">Contact Me!</h1>
+          <form
+            method="POST"
+            action="/send"
+            class="col-12 d-flex flex-column justify-content-center"
+          >
+            <!-- Email Field -->
+            <div class="input-group mb-3">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                class="form-control"
+                placeholder="Type your Email Address"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <!-- Message Field -->
+            <div class="input-group">
+              <textarea
+                id="message"
+                name="message"
+                class="form-control"
+                aria-label="With textarea"
+                placeholder="Type your message here"
+              ></textarea>
+            </div>
+            <!-- Send button -->
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
